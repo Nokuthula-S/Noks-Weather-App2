@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>👩🏽‍💻 Week 6 Homework</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/e7d4c50cc1.js" crossorigin="anonymous"></script>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="noks-weather-app">
+            <img src="images/logo-no-background.png" alt="Custom Weather App Logo" class="logo" />
+
+            <form class="search-form" id="search-form">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="search" placeholder="Enter city name.." autofocus="on" autocomplete="off"
+                            id="city-input" class="form-control shadow-sm" />
+                    </div>
+
+                    <div class="col-3">
+                        <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm" />
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-success w-100" id="current-location-button" type="button">
+                            Current
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <h1 id="city"></h1>
+
+            <ul>
+                <li id="date"></li>
+                <li id="description"></li>
+            </ul>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="clearfix">
+                        <div class="float-left">
+                            <span class="temperature" id="temperature"></span>
+                            <span class="units">°C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>Humidity: <span id="humidity"></span>%</li>
+                        <li>Wind: <span id="wind"></span> km/h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
