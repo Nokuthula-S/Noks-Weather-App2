@@ -1,6 +1,7 @@
 .logo {
     display: block;
     margin: 20px;
+    margin-left:80px;
     width: 300px;
     padding: 0px;
 }
@@ -26,7 +27,7 @@ h1 {
     margin: 20px auto;
     border-color: black;
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 500px;
     display: block;
     background-color: rgb(245, 244, 244);
 }
@@ -34,7 +35,24 @@ h1 {
 .temperature {
     color: rgb(33, 33, 33);
     font-size: 64px;
-    font-weight: 400;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.weather-temperature .active{
+    color: rgb(7, 7, 7);
+    cursor: default;
+
+}
+
+.weather-temperature .active:hover{
+    text-decoration: none;
+}
+
+strong {
+    color: rgb(61, 57, 57);
+    font-size: 60px;
+    font-weight: 300;
     line-height: 1;
 }
 
@@ -75,11 +93,12 @@ li {
     text-align: justify;
 }
 
-.btn {
+.col-2 .btn .btn-success .w-100 {
     border: none;
     color: white;
+    background-color: gray;
     padding: 10px;
-    font-size: 13px;
+    font-size: 10px;
     text-align: justify;
     cursor: pointer;
 }
