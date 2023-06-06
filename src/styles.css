@@ -29,7 +29,7 @@ h1 {
     border-radius: 10px;
     max-width: 500px;
     display: block;
-    background-color: rgb(245, 244, 244);
+    background-color: rgba(236, 240, 240, 0.993);
 }
 
 .temperature {
@@ -47,6 +47,29 @@ h1 {
 
 .weather-temperature .active:hover{
     text-decoration: none;
+}
+
+.weather-forecast {
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.weather-forecast-date {
+    font: 16px;
+    color: rgb(1, 43, 5);
+    font-weight: 500;
+    opacity: 0.8;
+    
+}
+
+.weather-forecast-temperatures {
+    font-size: 14px;
+    color: black;
+}
+
+.weather-forecast-temperature-min {
+    opacity: 0.7;
 }
 
 strong {
@@ -70,6 +93,7 @@ strong {
     font-size: 12px;
     line-height: 15px;
     justify-content: right;
+    font-weight: 400;
 }
 
 ul {
@@ -80,12 +104,11 @@ ul {
 li {
     color: #3a3939;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 450;
     height: 19px;
-    line-height: 1;
+    line-height: 1px;
     list-style: none;
 }
-
 .current {
     color: darkgray;
     font-size: 15px;
@@ -106,3 +129,10 @@ li {
 .btn:hover {
     background-color: lightgray;
 }
+
+p{
+   text-align: center;
+   font-size: 10px;
+}
+
+  
